@@ -16,14 +16,19 @@ import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AlbumListComponent } from './album-list/album-list.component';
+import { AlbumListComponent } from './components/album-list/album-list.component';
+import { PostsComponent } from './components/posts/posts.component';
+import { AlbumphotosComponent } from './components/albumphotos/albumphotos.component';
+
 
 registerLocaleData(en);
 
 @NgModule({
   declarations: [
     AppComponent,
-    AlbumListComponent
+    AlbumListComponent,
+    PostsComponent,
+    AlbumphotosComponent
   ],
   imports: [
     BrowserModule,

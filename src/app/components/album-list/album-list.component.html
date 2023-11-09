@@ -15,7 +15,7 @@
           </button>
           <nz-collapse>
             <nz-collapse-panel
-              *ngFor="let photo of photos[item.id]"
+              *ngFor="let photo nzExpandedIcon photos[item.id]"
               [nzHeader]="photo.title"
               [nzShowArrow]="false"
               [nzActive]="showPhotos[item.id]"
